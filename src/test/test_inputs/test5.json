@@ -40,7 +40,7 @@
     "sha": "abb3ec1b8174043d5cd21d21fbe3c3fb3e9a11c7ceff3314a3222404feedda52",
     "nm": "test.txt",
     "ph": "/Documents/assignments/test.txt",
-    "dp": 1
+    "dp": 2
 }
 
 {
@@ -76,7 +76,7 @@
     "sha": "abb3ec1b8174043d5cd21d21fbe3c3fb3e9a11c7ceff3314a3222404feedda52",
     "nm": "movie.mov",
     "ph": "/Documents/media/movies",
-    "dp": 1
+    "dp": 2
 }
 
 {
@@ -88,7 +88,7 @@
     "sha": "abb3ec1b8174043d5cd21d21fbe3c3fb3e9a11c7ceff3314a3222404feedda52",
     "nm": "movie.mov",
     "ph": "/Documents/media/movies/movie",
-    "dp": 1
+    "dp": 2
 }
 {
     "ts": 1551140352,
@@ -99,7 +99,7 @@
     "sha": "abb3ec1b8174043d5cd21d21fbe3c3fb3e9a11c7ceff3314a3222404feedda52",
     "nm": "movie.mov",
     "ph": "Documents/media/movies/movie.mov",
-    "dp": 1
+    "dp": 2
 }
 
 {
@@ -111,7 +111,7 @@
     "sha": "abb3ec1b8174043d5cd21d21fbe3c3fb3e9a11c7ceff3314a3222404feedda52",
     "nm": "movie.java",
     "ph": "Documents//folder//hello",
-    "dp": 1
+    "dp": 2
 }
 
 {
@@ -123,7 +123,7 @@
     "sha": "abb3ec1b8174043d5cd21d21fbe3c3fb3e9a11c7ceff3314a3222404feedda52",
     "nm": "avengers.mov",
     "ph": "Documents/movie/video.mov",
-    "dp": 1
+    "dp": 2
 }
 
 {

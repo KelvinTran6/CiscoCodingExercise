@@ -22,18 +22,18 @@
 
 ## Assumptions
 - Criterias for valid inputs  
-    - needs all of the JSON attributes listed in the instructions (ts, pt, si, uu, bg, sha, nm, ph, dp)
+    - Needs all of the JSON attributes listed in the instructions (ts, pt, si, uu, bg, sha, nm, ph, dp)
     - ts, pt and dp must be integers while the rest are strings
-    - dp can only be the integers 1, 2 and 3
-    - the file name (nm) must contain a valid file extension
-    - file path (ph) can include the file name at the end but it **must** match the nm value
-        - for example the following is valid: **ph**: Documents/folder/test.txt &nbsp; **nm**: test.txt
+    - DP can only be the integers 1, 2 and 3
+    - The file name (nm) must contain a valid file extension
+    - File path (ph) can include the file name at the end but it **must** match the nm value
+        - For example the following is valid: **ph**: Documents/folder/test.txt &nbsp; **nm**: test.txt
             - ph does not need to inclue the filename **ph**: Documents/folder/ &nbsp; **nm**: test.txt &nbsp; (this will be considered the same file by the program)
-        - the following is **not** valid: **ph** Documents/folder/file.txt &nbsp; **nm**: test.txt &nbsp; (no way to know which file to count)
+        - The following is **not** valid: **ph** Documents/folder/file.txt &nbsp; **nm**: test.txt &nbsp; (no way to know which file to count)
 
 - Output order does not matter
     - My program is currently returning the file extention along with the count in the order that the data is comming in
-        - for example if the files coming in are test1.txt and test2.pdf the output would be txt: 1 &nbsp; pdf: 1
+        - For example if the files coming in are test1.txt and test2.pdf the output would be txt: 1 &nbsp; pdf: 1
 
-- files with the same name but different path are considered different files
-
+- Files with the same name but different path are considered different files
+- Files with disposition of 1 (malicious) should still be counted
