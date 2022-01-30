@@ -34,9 +34,24 @@ class ParserTest {
             }
 
         assertEquals(expected1 ,result1);
+        System.out.println("Test 1 success:");
+        System.out.println(result1);
+        System.out.println();
         assertEquals(expected2 ,result2);
+        System.out.println("Test 2 success:");
+        System.out.println(result2);
+        System.out.println();
         assertEquals(expected3 ,result3);
+        System.out.println("Test 3 success:");
+        System.out.println(result3);
+        System.out.println();
         assertEquals(expected4 ,result4);
+        System.out.println("Test 4 success:");
+        System.out.println("expected emptry string");
+        System.out.println();
         assertEquals(expected5 ,result5);
+        System.out.println("Test 5 success:");
+        System.out.println(result5);
+        System.out.println();
     }
 }
