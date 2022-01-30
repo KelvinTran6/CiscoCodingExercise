@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "User data",
+  "description": "fictitious log file of JSON data that gives us information on files that were seen by users and whether it is safe or not (disposition).",
+  "type": "object",
+
+  "properties": {
+    "ts": {
+      "description": "time stamp",
+      "type": "integer"
+    },
+
+    "pt": {
+      "description": "processing time",
+      "type": "integer"
+    },
+
+    "si": {
+      "description": "session ID",
+      "type": "string"
+    },
+
+    "uu": {
+      "description": "user UUID",
+      "type": "string"
+    },
+
+    "bg": {
+      "description": "business UUID",
+      "type": "string"
+    },
+
+    "sha": {
+      "description": "sha256 of the file",
+      "type": "string"
+    },
+
+    "nm": {
+      "description": "file name",
+      "type": "string",
+      "pattern": "^[\\w\\s-]+\\.[A-Za-z]+$"
+    },
+
+    "ph": {
+      "description": "path",
+      "type": "string",
+      "pattern": "^(\\/?(\\w+\\/)*[\\w\\s-]+\\/?(\\.[A-Za-z]+\\/?$)?)$"
+    },
+
+    "dp": {
+      "description": "disposition (valid values: MALICIOUS (1), CLEAN (2), UNKNOWN (3))",
+      "type": "integer",
+      "enum": [1,2,3]
+
+    }
+  },
+
+  "required": ["ts", "pt", "si", "uu", "bg", "sha", "nm", "ph", "dp"]
+}
