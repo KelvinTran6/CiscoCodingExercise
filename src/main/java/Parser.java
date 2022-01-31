@@ -53,7 +53,7 @@ public class Parser {
                 String[] current_file = nm.split("\\.");
                 String file_extension = current_file[1];
 
-                // Constructing a the HashMap of file extensions and unique file
+                // Constructing a HashMap of file extensions and unique file
                 Set<String> s;
                 if(!file_extensions.containsKey(file_extension)){
                     s = new HashSet<String>();
