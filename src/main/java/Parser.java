@@ -12,7 +12,9 @@ import java.util.LinkedHashMap;
 public class Parser {
     public static void main(String[] args) throws FileNotFoundException {
        String s = parseJSON("input.json");
+       System.out.println("*******************************");
        System.out.println(s);
+       System.out.println("*******************************");
     }
 
     // parseJson takes a json file name and returns a string of unique file extensions and its count
@@ -46,7 +48,8 @@ public class Parser {
                 String ph = jsonObject.getString("ph");
 
                 if(!validateFile(nm, ph)){
-                    System.out.println("mismatch between file: " + nm + " and file path: " + ph);
+                    //mismatch between file and path
+                    //System.out.println("mismatch between file: " + nm + " and file path: " + ph);
                     continue;
                 }
 
@@ -66,7 +69,7 @@ public class Parser {
             }
             catch (ValidationException e){
                 // prints the exception message whenever invalid data is caught by the schema validator
-                System.out.println(e);
+                //System.out.println(e);
             }
         }
 

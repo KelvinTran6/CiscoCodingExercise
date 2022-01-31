@@ -33,6 +33,7 @@ class ParserTest {
                 e.printStackTrace();
             }
 
+        System.out.println("*******************************");
         assertEquals(expected1 ,result1);
         System.out.println("Test 1 success:");
         System.out.println(result1);
@@ -57,5 +58,6 @@ class ParserTest {
         System.out.println("Test 5 success:");
         System.out.println(result5);
         System.out.println();
+        System.out.println("*******************************");
     }
 }

@@ -11,7 +11,7 @@
 - To run the tests
     1. Navigate to "ParserTest.java" (src/test/java/ParserTest.java)
     2. Build and run the program
-- When running the test you may notice a bunch of exception being thrown. This is because the test cases includes many invalid entries. When the program sees an invalid entry it throws and exceptions and prints a reason (incorrect file format, incorrect data type, etc). Once the exception is thrown it continues to scan for more **valid** entries
+- Usually the program would print out the exception message for invalid data but it is commented out to make the output more clear
 
 ## Test files
 - I provided 5 different json test files because each file focuses on different areas where bugs may occur
