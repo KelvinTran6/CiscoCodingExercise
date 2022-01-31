@@ -30,7 +30,6 @@ public class Parser {
         //Creating a Schema which will be used to validate incomming data against the schema that we predefined in Data-schema.json
         Schema schemaValidator = SchemaLoader.load(jsonSchema);
 
-        ArrayList<JSONObject> files = new ArrayList<JSONObject>();
         LinkedHashMap<String, Set<String>> file_extensions = new LinkedHashMap<String, Set<String>>(); //used to map unique file extensions to all of the unique files with the same extension
 
 
@@ -40,7 +39,6 @@ public class Parser {
 
             try{
                 schemaValidator.validate(jsonObject); //checking if the current data is valid based on the predefined schema
-                files.add(jsonObject);
 
                 formatFolderStructure(jsonObject);
 
@@ -55,7 +53,6 @@ public class Parser {
                 String[] current_file = nm.split("\\.");
                 String file_extension = current_file[1];
 
-
                 // Constructing a the HashMap of file extensions and unique file
                 Set<String> s;
                 if(!file_extensions.containsKey(file_extension)){
@@ -64,10 +61,8 @@ public class Parser {
                 else{
                     s = file_extensions.get(file_extension);
                 }
-
                 s.add(ph); // HashSet does not allow duplicate entries so similar files will not be counted twice
                 file_extensions.put(file_extension, s);
-
             }
             catch (ValidationException e){
                 // prints the exception message whenever invalid data is caught by the schema validator
